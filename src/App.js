@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-// import main gallery component here
+import ImageGallery from "./components/ImageGallery";
 
 function App() {
   return (
     <React.Fragment>
-      <p>Test</p>
-      {/* Main component rendered */}
+      <ImageGallery />
     </React.Fragment>
   );
 }
