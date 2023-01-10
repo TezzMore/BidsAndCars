@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import { isMobile } from 'react-device-detect';
 import styled from "styled-components";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -50,7 +51,7 @@ const ImageGallery = () => {
         </em></p>
         <br />
         <h3><em>Berlin</em></h3>
-        <Gallery onClick={openLightbox} photos={album1} direction={"column"} columns={ 4 } />
+        <Gallery onClick={openLightbox} photos={album1} direction={"column"} columns={ isMobile ? 2 : 4 } />
         <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
