@@ -7,8 +7,6 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import { album1 } from "../constants/album1";
 // import { album2 } from "../constants/album2";
 
-console.log(process.env.REACT_APP_IMAGE_KIT_KEY);
-
 const Container = styled.div`
     margin: 3rem 8rem;
     @media only screen and (max-width: 900px) {
